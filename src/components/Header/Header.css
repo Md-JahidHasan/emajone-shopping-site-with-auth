@@ -1,0 +1,25 @@
+.header{
+    height: 80px;
+    background-color: #1C2B35;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+.header a{
+    color: #ffff;
+    text-decoration:none ;
+    margin-left: 35px;
+    font-size: 17px
+}
+.header a:hover{
+    color: orange;
+}
+.logout{
+    padding: 10px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(108, 45, 45);
+}
