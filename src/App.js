@@ -22,7 +22,7 @@ function App() {
         {
           path:'/',
           loader:()=>{
-            return fetch('products.json')
+            return fetch('http://localhost:5000/products')
           },
           element:<Shop></Shop>
         },

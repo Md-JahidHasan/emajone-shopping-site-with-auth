@@ -13,7 +13,7 @@ const Orders = () => {
         deleteShoppingCart()
     }
     const handleDeleteBtn = id =>{
-        const productAfterDelet = cart.filter(product=> product.id !==id);
+        const productAfterDelet = cart.filter(product=> product._id !==id);
         setCart(productAfterDelet);
         removeFromDb(id)
         console.log(productAfterDelet);
@@ -24,7 +24,7 @@ const Orders = () => {
             <div className="orders-container">
                 {
                     cart.map(product=><CartItem
-                    key={product.id}
+                    key={product._id}
                     product={product}
                     handleDeleteBtn={handleDeleteBtn}
                     ></CartItem>)
